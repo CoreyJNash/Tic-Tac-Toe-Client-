@@ -1,2 +1,54 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+
+body {
+  background-color: #53a1f9;
+  max-width: 800px;
+  margin: auto;
+}
+
+table {
+  max-width: none;
+  margin: auto;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  font-size: 45px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Gochi Hand', cursive;
+}
+
+h1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 75px;
+  background-color: #CA246A;
+  border: 3px solid #000000;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+
+.border {
+  border: 3px solid #000;
+  margin: 20px;
+  padding: 20px;
+}
+
+aside {
+  text-align: center;
+  font-size: 30px;
+  color: red;
+  font-family:'Gochi Hand', cursive;
+}
