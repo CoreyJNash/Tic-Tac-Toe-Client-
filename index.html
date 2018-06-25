@@ -16,13 +16,11 @@
   <h1>Tic Tac Toe EXTREME!</h1>
 <div class="flex-container flex-center">
     <div class="winner"></div>
-      <button id="start">Start Game</button>
+      <button class="start">Start Game</button>
       <button class="reset">Reset Game</button>
     </div>
-
-<p id="message"></p>
-
-<form id="sign-up">
+<div class="border flex-container flex-center">
+<form class="sign-up flex-container flex-center">
   <fieldset>
     <input type="text" name="credentials[email]" placeholder="Email">
     <input type="password" name="credentials[password]" placeholder="Password">
@@ -31,13 +29,25 @@
   </fieldset>
 </form>
 
-<form id="Sign-in">
+<form class="Sign-in flex-container flex-center">
   <fieldset>
     <input type="text" name="credentials[email]" placeholder="Email">
     <input type="password" name="credentials[password]" placeholder="Password">
     <input type="submit" value="Sign In!">
   </fieldset>
 </form>
+
+<form class="sign-out flex-container flex-center">
+<fieldset>
+      <input type='submit' value="Sign Out!">
+    </fieldset>
+</form>
+</div>
+
+<div class="discription">
+    <p>The game is simple... Tic-Tac-Toe! The classic battle that determins once and for all who's better...The Ex's or OHHHHS! You and a friend go head to head in a battle of mental prowess! Can you out-think your opponent and be the first to get 3 in a
+      row!</p>
+</div>
 
   <div class="board-container flex-container flex-column flex-center">
     <div class="board flex-container flex-wrap">
@@ -53,8 +63,6 @@
     </div>
   </div>
 
-    <p>The game is simple... Tic-Tac-Toe! The classic battle that determins once and for all who's better...The Ex's or OHHHHS! You and a friend go head to head in a battle of mental prowess! Can you out-think your opponent and be the first to get 3 in a
-      row!</p>
 <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 <script src='game.js'></script>
 </body>
