@@ -3,24 +3,9 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
 
 body {
-  background-color: #53a1f9;
-  max-width: 800px;
-  margin: auto;
-}
-
-table {
-  max-width: none;
-  margin: auto;
-  float: right;
-}
-
-.square {
-  height: 100px;
-  width: 100px;
-  font-size: 45px;
-  text-align: center;
-  font-weight: bold;
+  height: 100%;
   font-family: 'Gochi Hand', cursive;
+  background-color: #4f2ae2;
 }
 
 h1 {
@@ -34,26 +19,50 @@ h1 {
   border: 3px solid #000000;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 35%;
+
+.flex-container {
+  display: flex;
 }
 
-.border {
-  border: 3px solid #000;
-  margin: 20px;
-  padding: 20px;
+.flex-column {
+  flex-direction: column;
 }
 
-p {
-  text-align: center;
-  font-size: 30px;
-  color: red;
-  font-family:'Gochi Hand', cursive;
-  margin-left: auto;
-  margin-right: auto;
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-container {
+  justify-content: center;
+  align-items: cente;
+}
+
+.board-container {
+  height: 100%;
+  width: 100%;
+}
+
+.board {
+  width: 618px;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+  font-size: 150px;
+}
+
+.square:hover {
+  background-color: #7264be;
+}
+
+.reset {
+  background-color: #c8296a;
+  font-family: 'Gochi Hand', cirsive;
+  color: black;
+  font-size: 35px;
+  border: 3px solid black;
 }
 
 #start {
@@ -64,15 +73,9 @@ p {
   border: 3px solid black;
 }
 
-#reset {
-  background-color: #c8296a;
-  font-family: 'Gochi Hand', cirsive;
+.winner {
+  display: none;
+  padding: 10px;
+  font-size:35px;
   color: black;
-  font-size: 35px;
-  border: 3px solid black;
-}
-
-.button {
-  margin-left: auto;
-  margin-right: auto;
 }

@@ -12,38 +12,51 @@
   <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
   <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
 </head>
-
 <body>
-  <h1>Tic-Tac-Toe EXTREME!</h1>
-<div class="buttons">
-  <button id="start">Start Game</button>
-  <button id="reset">Reset Game</button>
-</div>
-  <div class="border">
-    <table border="1">
-      <tr>
-        <td class="square"></td>
-        <td class="square"></td>
-        <td class="square"></td>
-      </tr>
-      <tr>
-        <td class="square"></td>
-        <td class="square"></td>
-        <td class="square"></td>
-      </tr>
-      <tr>
-        <td class="square"></td>
-        <td class="square"></td>
-        <td class="square"></td>
-      </tr>
-    </table>
-    <p>The game is simple... Tic-Tac-Toe! The classic battle that determins once and for all who's better...The Ex's or OHHHHS! You and a friend go head to head in a battle of mental prowess! Can you out-think your opponent and be the first to get 3 in a
-      row!</p>
+  <h1>Tic Tac Toe EXTREME!</h1>
+<div class="flex-container flex-center">
+    <div class="winner"></div>
+      <button id="start">Start Game</button>
+      <button class="reset">Reset Game</button>
+    </div>
+
+<p id="message"></p>
+
+<form id="sign-up">
+  <fieldset>
+    <input type="text" name="credentials[email]" placeholder="Email">
+    <input type="password" name="credentials[password]" placeholder="Password">
+    <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
+    <input type="submit" value="Sign Up!">
+  </fieldset>
+</form>
+
+<form id="Sign-in">
+  <fieldset>
+    <input type="text" name="credentials[email]" placeholder="Email">
+    <input type="password" name="credentials[password]" placeholder="Password">
+    <input type="submit" value="Sign In!">
+  </fieldset>
+</form>
+
+  <div class="board-container flex-container flex-column flex-center">
+    <div class="board flex-container flex-wrap">
+      <div class="square flex-center flex-container"></div>
+      <div class="square flex-center flex-container"></div>
+      <div class="square flex-center flex-container"></div>
+      <div class="square flex-center flex-container"></div>
+      <div class="square flex-center flex-container"></div>
+      <div class="square flex-center flex-container"></div>
+      <div class="square flex-center flex-container"></div>
+      <div class="square flex-center flex-container"></div>
+      <div class="square flex-center flex-container"></div>
+    </div>
   </div>
 
-
+    <p>The game is simple... Tic-Tac-Toe! The classic battle that determins once and for all who's better...The Ex's or OHHHHS! You and a friend go head to head in a battle of mental prowess! Can you out-think your opponent and be the first to get 3 in a
+      row!</p>
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script src='game.js'></script>
 </body>
-<footer>
-</footer>
 
 </html>
