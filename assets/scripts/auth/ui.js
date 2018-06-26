@@ -5,6 +5,8 @@ const store = require('../store')
 const signUpSuccess = function (data) {
   $('#message').text('Signed up successfully')
   $('#message').css('background-color', ' #f7bd2f')
+  $('#message').css('font-size', '20px')
+  $('#message').css('text-align', 'center')
   $('#sign-up')[0].reset()
   console.log('signUpSuccess ran. Data is :', data)
 }
@@ -12,12 +14,15 @@ const signUpSuccess = function (data) {
 const signUpFailure = function (error) {
   $('#message').text('Error on sign up')
   $('#message').css('background-color', 'red')
+  $('#message').css('text-align', 'center')
   console.error('signUpFailure ran. Error is :', error)
 }
 
 const signInSuccess = function (data) {
   $('#message').text('Signed in successfully')
   $('#message').css('background-color', ' #f7bd2f')
+  $('#message').css('font-size', '20px')
+  $('#message').css('text-align', 'center')
   $('#sign-in')[0].reset()
   console.log('signInSuccess ran. Data is :', data)
   store.user = data.user
@@ -26,12 +31,14 @@ const signInSuccess = function (data) {
 const signInFailure = function (error) {
   $('#message').text('Error on sign in')
   $('#message').css('background-color', 'red')
+  $('#message').css('text-align', 'center')
   console.error('signInFailure ran. Error is :', error)
 }
 
 const signOutSuccess = function () {
   $('#message').text('Signed out successfully')
   $('#message').css('background-color', ' #f7bd2f')
+  $('#message').css('text-align', 'center')
   console.log('signOutSuccess ran and nothing was returned!')
   store.user = null
 }
@@ -39,6 +46,7 @@ const signOutSuccess = function () {
 const signOutFailure = function (error) {
   $('#message').text('Error on sign out')
   $('#message').css('background-color', 'red')
+  $('#message').css('text-align', 'center')
   console.error('signOutFailure ran. Error is :', error)
 }
 

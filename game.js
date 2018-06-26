@@ -4,7 +4,7 @@ $(document).ready(function () {
   const player1 = 'X'
   const player2 = 'O'
 
-// Start the game off whith knowing that its turn 1 and no moves have been made yet
+  // Start the game off whith knowing that its turn 1 and no moves have been made yet
   let currentTurn = 1
   let movesMade = 0
 
@@ -15,6 +15,8 @@ $(document).ready(function () {
   const sqr = $('.square')
   const winnerContainer = $('.winner')
   const reset = $('.reset')
+  const winTrackerX = $('.playerx')
+  const winTrackerO = $('.playero')
 
   // let the system know when a user clicks on a specific square and move ahead a turn
   sqr.on('click', function (e) {
