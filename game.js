@@ -28,7 +28,7 @@ $(document).ready(function () {
       currentTurn += 1
     } else {
       event.target.innerHTML = player2
-      event.target.style.color = 'yellow'
+      event.target.style.color = '#2fd7f7'
       currentTurn -= 1
     }
     // check to see who won.  If the current player is 1 and it's not player 2 than
