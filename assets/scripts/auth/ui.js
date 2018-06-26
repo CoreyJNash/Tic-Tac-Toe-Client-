@@ -4,7 +4,8 @@ const store = require('../store')
 
 const signUpSuccess = function (data) {
   $('#message').text('Signed up successfully')
-  $('#message').css('background-color', 'green')
+  $('#message').css('background-color', ' #f7bd2f')
+  $('#sign-up')[0].reset()
   console.log('signUpSuccess ran. Data is :', data)
 }
 
@@ -16,7 +17,8 @@ const signUpFailure = function (error) {
 
 const signInSuccess = function (data) {
   $('#message').text('Signed in successfully')
-  $('#message').css('background-color', 'green')
+  $('#message').css('background-color', ' #f7bd2f')
+  $('#sign-in')[0].reset()
   console.log('signInSuccess ran. Data is :', data)
   store.user = data.user
 }
@@ -29,7 +31,7 @@ const signInFailure = function (error) {
 
 const signOutSuccess = function () {
   $('#message').text('Signed out successfully')
-  $('#message').css('background-color', 'green')
+  $('#message').css('background-color', ' #f7bd2f')
   console.log('signOutSuccess ran and nothing was returned!')
   store.user = null
 }
