@@ -18,6 +18,10 @@ h1 {
   font-size: 75px;
   background-color: #f7bd2f;
   border: 3px solid #000000;
+  text-shadow: -1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 h2 {
@@ -25,7 +29,11 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   font-family: 'Permanent Marker', cursive;
-  color: #f7bd2f
+  color: #f7bd2f;
+  text-shadow: -1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 .border {
@@ -108,18 +116,33 @@ opacity: .6
   display: none;
   padding: 10px;
   font-size:35px;
-  color: black;
+  text-shadow: -1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+  color: #f7bd2f;
+
 }
 
-.discription {
-  text-align: center;
-  font-size: 25px;
-  color: #f7bd2f;
-  font-family: 'Permanent Marker', cursive;
+.btnbtn-primary {
+  background-color: #f7bd2f;
+  font-size: 35px;
+  border: 3px solid black;
+  width: 110%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.winner {
-  color: #f7bd2f;
+.modal-content {
+  text-align: center;
+  background-image: url('https://i.imgur.com/6zCDOX4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 80px;
+  color: #f6ff18;
+  border: 5px solid #f6ff18;
+  text-shadow: -1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
