@@ -14,8 +14,7 @@
 <body>
   <h1>Tic Tac Toe EXTREME!</h1>
 <div class="flex-container flex-center">
-    <div class="winner"></div>
-      <button class="start">Start Game</button>
+      <button id="games-create" class="start">Start Game</button>
       <button class="reset">Reset Game</button>
 
 <div class="instructions">
@@ -23,7 +22,7 @@
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-      A competition as old as time... X Vs. O.  Who will win!?  Can you out-wit you opponent?!
+      A competition as old as creation itself........ X Vs. O,  Who will win!?  Can you out-wit your opponent?!
     </div>
   </div>
 </div>
@@ -56,6 +55,7 @@
 <div id="message"></div>
 
 <h2>X GOES FIRST!</h2>
+<div class="winner flex-container flex-center"></div>
 <div class="playerx"></div>
 <div class="playero"></div>
 
@@ -74,8 +74,6 @@
   </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-<script src='game.js'></script>
-<script src='sounds.js'></script>
 
 </body>
 <footer>

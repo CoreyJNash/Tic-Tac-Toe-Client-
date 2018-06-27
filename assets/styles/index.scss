@@ -18,10 +18,7 @@ h1 {
   font-size: 75px;
   background-color: #f7bd2f;
   border: 3px solid #000000;
-  text-shadow: -1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
+  color: black;
 }
 
 h2 {
@@ -121,6 +118,7 @@ opacity: .6
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
   color: #f7bd2f;
+  text-align: center;
 
 }
 
@@ -131,6 +129,7 @@ opacity: .6
   width: 110%;
   margin-left: auto;
   margin-right: auto;
+  color: black;
 }
 
 .modal-content {
