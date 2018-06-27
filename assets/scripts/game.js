@@ -6,6 +6,7 @@ const player2 = 'O'
 // Start the game off whith knowing that its turn 1 and no moves have been made yet
 let currentTurn = 1
 let movesMade = 0
+let score = 0
 
 // declare out variables that will be used throughout the program
 // sqr is the swuare divs
@@ -88,6 +89,7 @@ function declareWinner (winner) {
   winner = winner === player1 ? 'Player X' : 'Player O'
   winnerContainer.html(winner + ' ' + 'Wins!')
 }
+
 $(document).ready(function () {
   sqr.on('click', startGame)
   resetButton.on('click', reset)
