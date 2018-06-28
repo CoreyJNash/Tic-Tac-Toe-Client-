@@ -2,7 +2,7 @@ THIS IS TIC TAC TOE!!
 
 This is the read me for my first project for WDI.
 
-This is a simple tic tac toe game, meant to be played with 2 local players around one system.  Each player picks a player piece either X or O, then each player takes turns selecting where to put a player piece on a simple 3 x 3 grid.
+This is a simple tic tac toe game, meant to be played with 2 local players around one system.  Users Log in and create a new game state.  From here the two players play a game of Tic Tac Toe.  Here players alternate taking turns adding an X and an O to a 3x3 grid.  X will always go first.  Once one of the players hits 3 in a row the game will display who the winner is.
 
 A player wins when they can get 3 in a row either verticaly, horizontialy or diagnoaly.
 

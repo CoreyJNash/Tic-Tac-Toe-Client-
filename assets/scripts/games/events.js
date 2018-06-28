@@ -12,7 +12,7 @@ const onCreateGames = function (event) {
   api.create()
     .then(ui.onCreateSuccess)
     .catch(ui.onCreateFailure)
-  // console.log(data)
+  console.log('Game started')
 }
 
 const onIndexGames = function (event) {
