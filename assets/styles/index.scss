@@ -81,6 +81,13 @@ h2 {
 		3px 3px 0 #000;
 }
 
+.bird {
+  display: none;
+  background-size: cover;
+  height: 75%;
+  width: 75%;
+}
+
 .square:hover {
   background-color: #f7bd2f;
   opacity: .6;
@@ -107,7 +114,7 @@ h2 {
 }
 
 .start:hover {
-opacity: .6
+opacity: .6;
 }
 
 .winner {
@@ -133,6 +140,10 @@ opacity: .6
   color: black;
 }
 
+.btnbtn-primary:hover {
+  opacity: .6;
+}
+
 .modal-content {
   text-align: center;
   background-image: url('https://i.imgur.com/6zCDOX4.jpg');
@@ -145,4 +156,8 @@ opacity: .6
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
+}
+
+.change-password {
+  padding: 10px;
 }

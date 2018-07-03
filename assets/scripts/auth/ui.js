@@ -23,6 +23,7 @@ const signInSuccess = function (data) {
   $('#message').css('background-color', ' #f7bd2f')
   $('#message').css('font-size', '20px')
   $('#message').css('text-align', 'center')
+  $('#message').css('timeout', 6000)
   $('#sign-in')[0].reset()
   console.log('signInSuccess ran. Data is :', data)
   store.user = data.user
@@ -52,7 +53,7 @@ const signOutFailure = function (error) {
 
 const changePasswordSuccess = function () {
   $('#message').text('Changed password successfully')
-  $('#message').css('background-color', 'green')
+  $('#message').css('background-color', '#f7bd2f')
   console.log('changePasswordSuccess ran and nothing was returned!')
 }
 

@@ -1,7 +1,6 @@
-// When the page loads the game funtions will run
 // let the logic know that player 1 is X and player 2 is O
-const player1 = 'X'
-const player2 = 'O'
+const player1 = '💥'
+const player2 = '💣'
 
 // Start the game off whith knowing that its turn 1 and no moves have been made yet
 let currentTurn = 1
@@ -73,6 +72,7 @@ function checkForWinner () {
       [2, 4, 6]
     ]
 
+    // this looks for the winning combos based on positions in the arrays above
     return winningCombos.find(function (combo) {
       if (results[combo[0]] !== '' && results[combo[1]] !== '' && results[combo[2]] !== '' && results[combo[0]] === results[combo[1]] && results[combo[1]] === results[combo[2]]) {
         return true
@@ -83,13 +83,13 @@ function checkForWinner () {
   }
 }
 
+// This function declares a winner and prints it to the screen above the game board.
 function declareWinner (winner) {
   winnerContainer.css('display', 'block')
   resetButton.css('display', 'block')
-  winner = winner === player1 ? 'Player X' : 'Player O'
+  winner = winner === player1 ? 'Player 💥' : 'Player 💣'
   winnerContainer.html(winner + ' ' + 'Wins!')
 }
-
 $(document).ready(function () {
   sqr.on('click', startGame)
   resetButton.on('click', reset)
