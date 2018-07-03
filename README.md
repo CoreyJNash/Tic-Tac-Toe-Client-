@@ -39,10 +39,13 @@ Javascript/Jquery was used to create the actual game logic and AJAX was used to 
 ADDITIONS/STYLING:
 ---------
 
-    - I gave the game an _EXTREME_ makeover to keep it from having a dull overdone look.  
-    - I wanted players to have fun with a new twist on an old classic.  With player pieces like explosion and bomb emojies instead of classic X and O pieces. 
-    - There is the reset button at the top along with a game discription Modal where the player can click to see a cool game discription.
-    -I tried to make it so when the user hoverd over a box in the gameboard a gif would display.  I got there but it broke the boxes making them unclickable only until you clicked the square 3 or 4 times. 
+I gave the game an _EXTREME_ makeover to keep it from having a dull overdone look.  
+
+I wanted players to have fun with a new twist on an old classic.  With player pieces like explosion and bomb emojies instead of classic X and O pieces. 
+
+There is the reset button at the top along with a game discription Modal where the player can click to see a cool game discription.
+
+I tried to make it so when the user hoverd over a box in the gameboard a gif would display.  I got there but it broke the boxes making them unclickable only until you clicked the square 3 or 4 times. 
 
 WIREFRAME:
 ----------
