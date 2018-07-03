@@ -1,8 +1,9 @@
 'use strict'
+const store = require ('../store.js')
 
 const onCreateSuccess = function (data) {
   $('#message').text('Game successfully created')
-  $('#message').css('background-color', 'green')
+  $('#message').css('background-color', '#f7bd2f')
   store.game = data.game
   console.log('onCreateSuccess ran. Data is :', data)
 }
@@ -15,7 +16,7 @@ const onCreateFailure = function (error) {
 
 const onIndexSuccess = function (data) {
   $('#message').text('All Games successfully received')
-  $('#message').css('background-color', 'green')
+  $('#message').css('background-color', '#f7bd2fn')
   console.log('onIndexSuccess ran. Data is :', data.examples)
 }
 
@@ -27,7 +28,7 @@ const onIndexFailure = function (error) {
 
 const onShowSuccess = function (data) {
   $('#message').text('One game successfully received')
-  $('#message').css('background-color', 'green')
+  $('#message').css('background-color', '#f7bd2f')
   console.log('onCreateSuccess ran. Data is :', data)
 }
 
@@ -39,7 +40,7 @@ const onShowFailure = function (error) {
 
 const onDestroySuccess = function () {
   $('#message').text('Game successfully deleted')
-  $('#message').css('background-color', 'green')
+  $('#message').css('background-color', '#f7bd2f')
   console.log('Game successfully deleted')
 }
 
@@ -49,10 +50,8 @@ const onDestroyFailure = function (error) {
   console.error('onDestroyFailure ran. Error is :', error)
 }
 
-const onUpdateSuccess = function () {
-  $('#message').text('Game successfully updated')
-  $('#message').css('background-color', 'green')
-  console.log('Game successfully updated')
+const userMovesSucess = function (data) {
+
 }
 
 const onUpdateFailure = function (error) {
@@ -70,6 +69,6 @@ module.exports = {
   onShowFailure,
   onDestroySuccess,
   onDestroyFailure,
-  onUpdateSuccess,
-  onUpdateFailure
+  onUpdateFailure,
+  userMovesSucess
 }

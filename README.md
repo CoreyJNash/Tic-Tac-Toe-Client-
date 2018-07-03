@@ -45,7 +45,12 @@ I wanted players to have fun with a new twist on an old classic.  With player pi
 
 There is the reset button at the top along with a game discription Modal where the player can click to see a cool game discription.
 
+WHATS LEFT?:
+------------
+
 I tried to make it so when the user hoverd over a box in the gameboard a gif would display.  I got there but it broke the boxes making them unclickable only until you clicked the square 3 or 4 times. 
+
+I would like to make tie counter as well.  This is something I can't seem to figure out but I will continue to work and get that going. 
 
 WIREFRAME:
 ----------

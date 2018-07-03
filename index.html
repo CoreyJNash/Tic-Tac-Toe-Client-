@@ -13,7 +13,39 @@
 </head>
 <body>
   <h1>Tic Tac Toe EXTREME!</h1>
-<div class="flex-container flex-center">
+  <div class="border flex-container flex-center">
+    <form id="sign-up" class="sign-up flex-container flex-center">
+      <fieldset>
+        <input type="text" name="credentials[email]" placeholder="Email">
+        <input type="password" name="credentials[password]" placeholder="Password">
+        <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
+        <input type="submit" value="Sign Up!">
+      </fieldset>
+    </form>
+    
+    <form id="sign-in" class="Sign-in flex-container flex-center">
+      <fieldset>
+        <input type="text" name="credentials[email]" placeholder="Email">
+        <input type="password" name="credentials[password]" placeholder="Password">
+        <input type="submit" value="Sign In!">
+      </fieldset>
+    </form>
+    <form id="change-password" class="change-password flex-container flex-center">
+      <fieldset>
+        <input type="password" name="passwords[old]" placeholder="Old Password">
+        <input type="password" name="passwords[new]" placeholder="New Password">
+        <input type="submit" value="Change Password!">
+      </fieldset>
+    </form>
+    
+    <form id="sign-out" class="sign-out flex-container flex-center">
+    <fieldset>
+          <input type='submit' value="Sign Out!">
+        </fieldset>
+    </form>
+    </div>
+    <div id="message"></div>
+  <div class="flex-container flex-center">
       <button id="games-create" class="start">Start Game</button>
       <button class="reset">Reset Game</button>
 
@@ -28,38 +60,6 @@
 </div>
 </div>
 </div>
-<div class="border flex-container flex-center">
-<form id="sign-up" class="sign-up flex-container flex-center">
-  <fieldset>
-    <input type="text" name="credentials[email]" placeholder="Email">
-    <input type="password" name="credentials[password]" placeholder="Password">
-    <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
-    <input type="submit" value="Sign Up!">
-  </fieldset>
-</form>
-
-<form id="sign-in" class="Sign-in flex-container flex-center">
-  <fieldset>
-    <input type="text" name="credentials[email]" placeholder="Email">
-    <input type="password" name="credentials[password]" placeholder="Password">
-    <input type="submit" value="Sign In!">
-  </fieldset>
-</form>
-<form id="change-password" class="change-password flex-container flex-center">
-  <fieldset>
-    <input type="password" name="passwords[old]" placeholder="Old Password">
-    <input type="password" name="passwords[new]" placeholder="New Password">
-    <input type="submit" value="Change Password!">
-  </fieldset>
-</form>
-
-<form id="sign-out" class="sign-out flex-container flex-center">
-<fieldset>
-      <input type='submit' value="Sign Out!">
-    </fieldset>
-</form>
-</div>
-<div id="message"></div>
 
 <h2>💥 GOES FIRST!</h2>
 <div class="winner flex-container flex-center"></div>
@@ -85,6 +85,7 @@
 
 </body>
 <footer>
+  <h4>Game Created by: Corey Nash ©2018<h4>
 </footer>
 
 </html>
