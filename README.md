@@ -1,8 +1,8 @@
 
-#h1 WDI-PVD-03 Project #1 - Tic Tac Toe Extreme!
+WDI-PVD-03 Project #1 - Tic Tac Toe Extreme!
 =================================================
 
-#h2 OVERVIEW:
+OVERVIEW:
 -------------
 
 For my first project for WDI-PVD-03 I needed to create a Tic Tac Toe game, where a player can opt to create an account, sign-in, change password and then sign out.  Then play against another local user in a simple game of Tic Tac Toe (with an EXTREME twist!). My user stories were as follows:
@@ -12,7 +12,7 @@ For my first project for WDI-PVD-03 I needed to create a Tic Tac Toe game, where
     - The game will display the amount of times the user has won on either the  💥 or 💣. 
     - When the game is over you can reset the gameboard by pressing the 'reset' button at the top of the screen. 
 
-#h2 SOME PROJECT REQUIREMENTS:
+SOME PROJECT REQUIREMENTS:
 ------------------------------
     
     - Must deploy this page to Github pages.
