@@ -47,7 +47,7 @@ const onUpdateMoves = function (event) {
   console.log('onUpdateMoves ran!')
 
   const data = game.gameValues
-  aip.userMoves(data.i, data.v, data.isOver)
+  api.updateMoves(data)
     .then(ui.userMovesSucess)
     .catch(ui.userMovesSucess)
 }
@@ -56,6 +56,8 @@ const addHandlers = () => {
   $('#games-create').on('click', onCreateGames)
   $('#games-index').on('submit', onIndexGames)
   $('#games-show').on('submit', onShowGames)
+  $('.square').on('click', onUpdateMoves)
+  
 }
 
 module.exports = {
