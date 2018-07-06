@@ -121,6 +121,18 @@ h4 {
   border: 3px solid black;
 }
 
+.show {
+  background-color: #f7bd2f;
+  font-family: 'Permanent Marker', cursive;
+  color: black;
+  font-size: 35px;
+  border: 3px solid black;
+}
+
+.show:hover {
+  opacity: .6;
+}
+
 .start:hover {
 opacity: .6;
 }

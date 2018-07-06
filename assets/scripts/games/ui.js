@@ -26,28 +26,16 @@ const onIndexFailure = function (error) {
   console.error('onIndexFailure ran. Error is :', error)
 }
 
-const onShowSuccess = function (data) {
-  $('#message').text('One game successfully received')
-  $('#message').css('background-color', '#f7bd2f')
-  console.log('onCreateSuccess ran. Data is :', data)
+const showGamesSucess = function (data) {
+  for (let i = 0; i <data.games.length; i++) {
+    $('#view-games').append('ID ' + data.games.id)
+  }
 }
 
-const onShowFailure = function (error) {
-  $('#message').text('Error on getting game')
+const showGamesFailure = function (error) {
+  $('#message').text('Error on getting games')
   $('#message').css('background-color', 'red')
   console.error('onShowFailure ran. Error is :', error)
-}
-
-const onDestroySuccess = function () {
-  $('#message').text('Game successfully deleted')
-  $('#message').css('background-color', '#f7bd2f')
-  console.log('Game successfully deleted')
-}
-
-const onDestroyFailure = function (error) {
-  $('#message').text('Error on deleting game')
-  $('#message').css('background-color', 'red')
-  console.error('onDestroyFailure ran. Error is :', error)
 }
 
 const userMovesSucess = function (data) {
@@ -65,10 +53,8 @@ module.exports = {
   onCreateFailure,
   onIndexSuccess,
   onIndexFailure,
-  onShowSuccess,
-  onShowFailure,
-  onDestroySuccess,
-  onDestroyFailure,
+  showGamesSucess,
+  showGamesFailure,
   onUpdateFailure,
   userMovesSucess
 }

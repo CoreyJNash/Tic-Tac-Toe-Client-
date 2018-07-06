@@ -16,9 +16,9 @@ const createGame = function (data) {
   })
 }
 
-const index = function () {
+const getGames = function () {
   return $.ajax({
-    url: config.apiUrl + '/games',
+    url: config.apiUrl + '/games/' + game.id,
     method: 'GET',
     headers: {
       Authorization: 'Token token=' + store.user.token
@@ -26,49 +26,20 @@ const index = function () {
   })
 }
 
-const show = function (games) {
+const updateMoves = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/games/' + games.id,
-    method: 'GET',
-    headers: {
-      Authorization: 'Token token=' + store.user.token
-    }
-  })
-}
-
-const destroy = function (id) {
-  return $.ajax({
-    url: config.apiUrl + '/games/' + id,
-    method: 'DELETE',
-    headers: {
-      Authorization: 'Token token=' + store.user.token
-    }
-  })
-}
-
-const updateMoves = function (index, value, over) {
-  return $.ajax({
-    url: config.apiUrl + '/games/' + store.games.id,
+    url: config.apiUrl + '/games/' + store.game.id,
     method: 'PATCH',
+    contentType: 'application/json',
     headers: {
       Authorization: 'Token token=' + store.user.token
     },
-    data: {
-      'game': {
-        'cell': {
-          'index': index,
-          'value': value
-        },
-        'over': over
-      }
-    }
+    data
   })
 }
 
 module.exports = {
   createGame,
-  index,
-  show,
-  destroy,
+  getGames,
   updateMoves
 }

@@ -24,23 +24,13 @@ const onIndexGames = function (event) {
     .catch(ui.onIndexFailure)
 }
 
-const onShowGames = function (event) {
+const onGetGames = function (event) {
   event.preventDefault()
   console.log('onShowGames ran!')
-
-  const data = getFormFields(event.target)
-  const games = data.games
-
-  if (games.id.length !== 0) {
-    api.show(games)
-      .then(ui.onShowSuccess)
-      .catch(ui.onShowFailure)
-  } else {
-    $('#message').html('<p>Please provide an example id!</p>')
-    $('#message').css('background-color', 'red')
-    console.log('Please enter an example id!')
+  api.getGames()
+    .then(ui.getGamesSucess)
+    .catch(ui.getGamesFailure)
   }
-}
 
 const onUpdateMoves = function (event) {
   event.preventDefault()
@@ -55,7 +45,7 @@ const onUpdateMoves = function (event) {
 const addHandlers = () => {
   $('#games-create').on('click', onCreateGames)
   $('#games-index').on('submit', onIndexGames)
-  $('#games-show').on('submit', onShowGames)
+  $('#games-show').on('click', onGetGames)
   $('.square').on('click', onUpdateMoves)
   
 }
