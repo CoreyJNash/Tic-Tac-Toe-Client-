@@ -17,6 +17,16 @@ const resetButton = $('.reset')
 const winTrackerX = $('.playerx')
 const winTrackerO = $('.playero')
 
+let updateGameMove = {
+  "game": {
+    "cell": {
+      "index": "",
+      "value": "",
+    },
+    "over": false
+  }
+}
+
 
 // let the system know when a user clicks on a specific square and move ahead a turn
 const startGame = function (event) {
