@@ -30,16 +30,18 @@ const onGetGames = function (event) {
   api.getGames()
     .then(ui.getGamesSucess)
     .catch(ui.getGamesFailure)
+    ui.showGamesSucess()
   }
+
 
 const onUpdateMoves = function (event) {
   event.preventDefault()
   console.log('onUpdateMoves ran!')
 
   const data = game.gameValues
-  api.updateMoves(data)
+  api.updateMoves(data.i, data.v, data.isOver)
     .then(ui.userMovesSucess)
-    .catch(ui.userMovesSucess)
+    .catch(ui.userMovesFailure)
 }
 
 const addHandlers = () => {

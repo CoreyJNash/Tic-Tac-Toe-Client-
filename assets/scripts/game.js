@@ -17,17 +17,11 @@ const resetButton = $('.reset')
 const winTrackerX = $('.playerx')
 const winTrackerO = $('.playero')
 
-let updateGameMove = {
-  "game": {
-    "cell": {
-      "index": "",
-      "value": "",
-    },
-    "over": false
-  }
+const gameValues = {
+  i: 0,
+  v: 0,
+  isOver: false
 }
-
-
 // let the system know when a user clicks on a specific square and move ahead a turn
 const startGame = function (event) {
   movesMade += 1
@@ -37,10 +31,14 @@ const startGame = function (event) {
   if (currentTurn === 1) {
     event.target.innerHTML = player1
     event.target.style.color = '#52ff00'
+    gameValues.i = event.target.id
+    gameValues.v = player1
     currentTurn += 1
   } else {
     event.target.innerHTML = player2
     event.target.style.color = '#2fd7f7'
+    gameValues.i = event.target.id
+    gameValues.v = player2
     currentTurn -= 1
   }
   // check to see who won.  If the current player is 1 and it's not player 2 than
@@ -107,5 +105,6 @@ $(document).ready(function () {
 })
 
 module.exports = {
-  startGame
+  startGame,
+  gameValues
 }

@@ -9,6 +9,7 @@ const signUpSuccess = function (data) {
   $('#message').css('text-align', 'center')
   $('#sign-up')[0].reset()
   console.log('signUpSuccess ran. Data is :', data)
+  
 }
 
 const signUpFailure = function (error) {
@@ -23,6 +24,10 @@ const signInSuccess = function (data) {
   $('#message').css('background-color', ' #f7bd2f')
   $('#message').css('font-size', '20px')
   $('#message').css('text-align', 'center')
+  $('#sign-out').removeClass('hidden')
+  $('#change-password').removeClass('hidden')
+  $('#sign-in').addClass('hidden')
+  $('#sign-up').addClass('hidden')
   $('#message').css('timeout', 6000)
   $('#sign-in')[0].reset()
   console.log('signInSuccess ran. Data is :', data)
@@ -40,6 +45,10 @@ const signOutSuccess = function () {
   $('#message').text('Signed out successfully')
   $('#message').css('background-color', ' #f7bd2f')
   $('#message').css('text-align', 'center')
+  $('#sign-up').removeClass('hidden')
+  $('#sign-in').removeClass('hidden')
+  $('#change-password').addClass('hidden')
+  $('#sign-out').addClass('hidden')
   console.log('signOutSuccess ran and nothing was returned!')
   store.user = null
 }

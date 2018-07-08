@@ -18,7 +18,7 @@ const createGame = function (data) {
 
 const getGames = function () {
   return $.ajax({
-    url: config.apiUrl + '/games/' + game.id,
+    url: config.apiUrl + '/games/' + store.game.id,
     method: 'GET',
     headers: {
       Authorization: 'Token token=' + store.user.token
@@ -26,15 +26,23 @@ const getGames = function () {
   })
 }
 
-const updateMoves = function (data) {
+
+const updateMoves = function (index, value, over) {
   return $.ajax({
-    url: config.apiUrl + '/games/' + store.game.id,
     method: 'PATCH',
-    contentType: 'application/json',
+    url: config.apiUrl + '/games/' + store.game.id,
     headers: {
       Authorization: 'Token token=' + store.user.token
     },
-    data
+    data: {
+      'game': {
+        'cell': {
+          'index': index,
+          'value': value
+        },
+        'over': over
+      }
+    }
   })
 }
 

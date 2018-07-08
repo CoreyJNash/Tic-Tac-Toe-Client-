@@ -27,8 +27,8 @@ const onIndexFailure = function (error) {
 }
 
 const showGamesSucess = function (data) {
-  for (let i = 0; i <data.games.length; i++) {
-    $('#view-games').append('ID ' + data.games.id)
+  for (let i = 0; i < data.games.length; i++) {
+    $('#view-games').append(`<p> ${data.games[index].id} | Cells --> ${JSON.stringify(data.games[index].cells)}</p>`)
   }
 }
 

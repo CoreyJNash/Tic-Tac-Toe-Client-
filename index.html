@@ -30,7 +30,7 @@
         <input type="submit" value="Sign In!">
       </fieldset>
     </form>
-    <form id="change-password" class="change-password flex-container flex-center">
+    <form id="change-password" class="change-password hidden flex-container flex-center">
       <fieldset>
         <input type="password" name="passwords[old]" placeholder="Old Password">
         <input type="password" name="passwords[new]" placeholder="New Password">
@@ -38,7 +38,7 @@
       </fieldset>
     </form>
     
-    <form id="sign-out" class="sign-out flex-container flex-center">
+    <form id="sign-out" class="sign-out hidden flex-container flex-center">
     <fieldset>
           <input type='submit' value="Sign Out!">
         </fieldset>
@@ -70,18 +70,18 @@
 
   <div class="board-container flex-container flex-column flex-center">
     <div class="board flex-container flex-wrap">
-      <div class="square flex-center flex-container"></div>
-      <div class="square flex-center flex-container"></div>
-      <div class="square flex-center flex-container"></div>
-      <div class="square flex-center flex-container"></div>
-      <div class="square flex-center flex-container"></div>
-      <div class="square flex-center flex-container"></div>
-      <div class="square flex-center flex-container"></div>
-      <div class="square flex-center flex-container"></div>
-      <div class="square flex-center flex-container"></div>
+      <div class="square flex-center flex-container" id="0"></div>
+      <div class="square flex-center flex-container" id="1"></div>
+      <div class="square flex-center flex-container" id="2"></div>
+      <div class="square flex-center flex-container" id="3"></div>
+      <div class="square flex-center flex-container" id="4"></div>
+      <div class="square flex-center flex-container" id="5"></div>
+      <div class="square flex-center flex-container" id="6"></div>
+      <div class="square flex-center flex-container" id="7"></div>
+      <div class="square flex-center flex-container" id="8"></div>
     </div>
   </div>
-  <div id="view-games"</div>
+  <div id="view-games"></div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
