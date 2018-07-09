@@ -6,18 +6,18 @@ const ui = require('./ui')
 
 const onCreateGames = function (event) {
   event.preventDefault()
-  console.log('onCreateGames ran!')
+  // console.log('onCreateGames ran!')
  // game.startGame()
 
   api.createGame()
     .then(ui.onCreateSuccess)
     .catch(ui.onCreateFailure)
-  console.log('Game started')
+  // console.log('Game started')
 }
 
 const onIndexGames = function (event) {
   event.preventDefault()
-  console.log('onIndexGames ran!')
+  // console.log('onIndexGames ran!')
 
   api.index()
     .then(ui.onIndexSuccess)
@@ -26,7 +26,7 @@ const onIndexGames = function (event) {
 
 const onGetGames = function (event) {
   event.preventDefault()
-  console.log('onShowGames ran!')
+  // console.log('onShowGames ran!')
   api.getGames()
     .then(ui.showGamesSucess)
     .catch(ui.getGamesFailure)
@@ -36,7 +36,7 @@ const onGetGames = function (event) {
 
 const onUpdateMoves = function (event) {
   event.preventDefault()
-  console.log('onUpdateMoves ran!')
+  // console.log('onUpdateMoves ran!')
 
   const data = game.gameValues
   api.updateMoves(data.i, data.v, data.isOver)
