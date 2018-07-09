@@ -18,7 +18,7 @@ const createGame = function (data) {
 
 const getGames = function () {
   return $.ajax({
-    url: config.apiUrl + '/games/' + store.game.id,
+    url: config.apiUrl + '/games/',
     method: 'GET',
     headers: {
       Authorization: 'Token token=' + store.user.token

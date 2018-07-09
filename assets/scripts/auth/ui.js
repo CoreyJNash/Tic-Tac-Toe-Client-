@@ -49,6 +49,7 @@ const signOutSuccess = function () {
   $('#sign-in').removeClass('hidden')
   $('#change-password').addClass('hidden')
   $('#sign-out').addClass('hidden')
+  $('#view-games').addClass('hidden')
   console.log('signOutSuccess ran and nothing was returned!')
   store.user = null
 }

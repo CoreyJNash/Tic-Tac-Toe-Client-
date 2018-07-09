@@ -27,7 +27,14 @@ const onIndexFailure = function (error) {
 }
 
 const showGamesSucess = function (data) {
-  $('#view-games').text(`${data.games.length} games have been completed!`)
+  for (let i = 0; i < data.games.length; i++) {
+    $('#view-games').append('<p><b>ID:</b>' + data.games[i].id + '    <b>Game Squares</b>' + data.games[i].cells + '</p>')
+    $('#view-games').css('color', '#f6ff18') 
+    $('#view-games').removeClass('hidden')
+    console.log(data.games[i])
+  }
+  // $('#view-games').text('${data.games} games have been completed!')
+  // console.log(data.games)
 }
 
 const showGamesFailure = function (error) {

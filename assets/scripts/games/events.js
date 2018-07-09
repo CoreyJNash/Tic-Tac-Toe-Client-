@@ -28,9 +28,9 @@ const onGetGames = function (event) {
   event.preventDefault()
   console.log('onShowGames ran!')
   api.getGames()
-    .then(ui.getGamesSucess)
+    .then(ui.showGamesSucess)
     .catch(ui.getGamesFailure)
-    ui.showGamesSucess()
+    // ui.showGamesSucess()
   }
 
 
