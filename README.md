@@ -51,6 +51,8 @@ There is the reset button at the top along with a game discription Modal where t
 WHATS LEFT?:
 ------------
 
+I would like to make it so the displayed games are displayed in a cleaner more appealing manner.  Maybe throw them in a modal that pops up when selecting the show games button. 
+
 I tried to make it so when the user hoverd over a box in the gameboard a gif would display.  I got there but it broke the boxes making them unclickable only until you clicked the square 3 or 4 times. 
 
 I would like to make tie counter as well.  This is something I can't seem to figure out but I will continue to work and get that going. 
