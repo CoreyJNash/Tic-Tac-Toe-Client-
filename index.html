@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TicTacToe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Do not add `link` tags-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Do not add `script` tags-->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+<body>
+  <h1>Tic Tac Toe EXTREME!</h1>
+  <div class="border flex-container flex-center">
+    <form id="sign-up" class="sign-up flex-container flex-center">
+      <fieldset>
+        <input type="text" name="credentials[email]" placeholder="Email">
+        <input type="password" name="credentials[password]" placeholder="Password">
+        <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
+        <input type="submit" value="Sign Up!">
+      </fieldset>
+    </form>
+    
+    <form id="sign-in" class="Sign-in flex-container flex-center">
+      <fieldset>
+        <input type="text" name="credentials[email]" placeholder="Email">
+        <input type="password" name="credentials[password]" placeholder="Password">
+        <input type="submit" value="Sign In!">
+      </fieldset>
+    </form>
+    <form id="change-password" class="change-password hidden flex-container flex-center">
+      <fieldset>
+        <input type="password" name="passwords[old]" placeholder="Old Password">
+        <input type="password" name="passwords[new]" placeholder="New Password">
+        <input type="submit" value="Change Password!">
+      </fieldset>
+    </form>
+    
+    <form id="sign-out" class="sign-out hidden flex-container flex-center">
+    <fieldset>
+          <input type='submit' value="Sign Out!">
+        </fieldset>
+    </form>
+    </div>
+    <div id="message"></div>
+  <div class="flex-container flex-center">
+      <button id="games-create" class="start">Start Game</button>
+      <button class="reset">Reset Game</button>
+      <button id="games-show" class="show">Show Games</button>
+
+<div class="instructions">
+  <button type="button" class="btnbtn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Game Description</button>
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      A competition as old as creation itself........ 💥 Vs. 💣,  Who will win!?  Can you out-wit your opponent?!
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<h2>💥 GOES FIRST!</h2>
+<div class="winner flex-container flex-center"></div>
+
+<div class="playerx"></div>
+<div class="playero"></div>
+
+  <div class="board-container flex-container flex-column flex-center">
+    <div class="board flex-container flex-wrap">
+      <div class="square flex-center flex-container" id="0"></div>
+      <div class="square flex-center flex-container" id="1"></div>
+      <div class="square flex-center flex-container" id="2"></div>
+      <div class="square flex-center flex-container" id="3"></div>
+      <div class="square flex-center flex-container" id="4"></div>
+      <div class="square flex-center flex-container" id="5"></div>
+      <div class="square flex-center flex-container" id="6"></div>
+      <div class="square flex-center flex-container" id="7"></div>
+      <div class="square flex-center flex-container" id="8"></div>
+    </div>
+  </div>
+  <div id="view-games" class="flex-center flex-center"></div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+</body>
+<footer>
+  <h4>💥Game Created by: Corey Nash ©2018💥<h4>
+</footer>
+
+</html>
