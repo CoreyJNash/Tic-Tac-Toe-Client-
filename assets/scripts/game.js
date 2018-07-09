@@ -5,7 +5,7 @@ const player2 = '💣'
 // Start the game off whith knowing that its turn 1 and no moves have been made yet
 let currentTurn = 1
 let movesMade = 0
-let score = 0
+// let score = 0
 
 // declare out variables that will be used throughout the program
 // sqr is the swuare divs
@@ -14,8 +14,8 @@ let score = 0
 const sqr = $('.square')
 const winnerContainer = $('.winner')
 const resetButton = $('.reset')
-const winTrackerX = $('.playerx')
-const winTrackerO = $('.playero')
+// const winTrackerX = $('.playerx')
+// const winTrackerO = $('.playero')
 
 const gameValues = {
   i: 0,
